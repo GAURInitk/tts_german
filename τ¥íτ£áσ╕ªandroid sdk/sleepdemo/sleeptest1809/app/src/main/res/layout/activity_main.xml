@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/time_ofsleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp">
+
+        <RelativeLayout
+            android:id="@+id/toptime_rt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:id="@+id/sleep_styletext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/sleep_hourvalue"
+                android:lineSpacingExtra="0pt"
+                android:lineSpacingMultiplier="1"
+                android:text="Sleep Time"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/sleep_hourvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@+id/sleep_styletext"
+                android:gravity="bottom"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0pt"
+                android:lineSpacingMultiplier="1"
+                android:paddingTop="0dp"
+                android:paddingBottom="0dp"
+                android:text="0"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/sleep_hourtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/sleep_hourvalue"
+                android:layout_toEndOf="@+id/sleep_hourvalue"
+                android:lineSpacingExtra="0pt"
+                android:lineSpacingMultiplier="1"
+                android:text="H"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/fenzhongvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_toEndOf="@+id/sleep_hourtext"
+                android:gravity="bottom"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0pt"
+                android:lineSpacingMultiplier="1"
+                android:text="0"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/fenzhongtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/fenzhongvalue"
+                android:layout_toEndOf="@+id/fenzhongvalue"
+                android:lineSpacingExtra="0pt"
+                android:lineSpacingMultiplier="1"
+                android:text="M"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/sleep_start_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toptime_rt"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:text="(00:00-00:00)"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sleep_day_cicle_zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Off Bed"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sleep_day_cicle_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Awake"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REM"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Light_Sleep"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Deep Sleep"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.example.sleeptest1809.SleepView
+        android:id="@+id/sleep_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
